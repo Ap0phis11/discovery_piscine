@@ -1,0 +1,79 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://c.pxhere.com/photos/fd/54/architecture_berlin_building_platform_railway_railway_station_selective_color_station-1021434.jpg!d");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banniere {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #003366;
+    overflow: hidden;
+}
+
+/* Styles du menu */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-item a:hover {
+    background-color: #00509e;
+}
+
+/* Styles du sous-menu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #00509e;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.submenu-item a {
+    padding: 10px;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu-item a:hover {
+    background-color: #0074d9;
+    display: inline-block;
+}
+
+/* Affichage du sous-menu au survol */
+.menu-item:hover .submenu {
+    display: inline-block;
+}
